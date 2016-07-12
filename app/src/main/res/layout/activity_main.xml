@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.admin.crossword.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"/>
+
+    <ImageView
+        android:id="@+id/storeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:src="@drawable/bookstore"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/storeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BOOKSTORE"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#FF4081"
+        android:layout_below="@+id/storeImage"
+        android:layout_alignStart="@+id/phoneIcon" />
+
+    <ImageView
+        android:id="@+id/locationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location_icon"
+        android:layout_alignTop="@+id/storeLocation"
+        android:layout_alignStart="@+id/phoneIcon"
+        android:layout_alignBottom="@+id/storeLocation"
+        android:layout_alignEnd="@+id/phoneIcon" />
+
+    <TextView
+        android:id="@+id/storeLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mondeal Retail Park Block E, AMD, 380015 "
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@+id/storeType"
+        android:layout_toEndOf="@+id/locationIcon" />
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone_icon"
+        android:paddingTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/locationIcon"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/storePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1800 3000 1203"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/locationIcon"
+        android:layout_alignStart="@+id/storeLocation" />
+
+    <TextView
+        android:id="@+id/aboutStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Description"
+        android:textAllCaps="true"
+        android:textColor="#FF4081"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/phoneIcon"
+        android:layout_alignStart="@+id/phoneIcon" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutStore"
+        android:layout_alignStart="@+id/aboutStore">
+
+    <TextView
+        android:id="@+id/storeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Crossword aims to be a point of cultural and social interaction where authors and poets hold court, where children are regaled, where people gravitate to be informed, to be entertained, even enlightened. The name embodies the vision of Crossword as a place and space for people who seek information, knowledge or just the pleasure of reading. Crossword stocks the widest range of Books – Movies- Music- Toys- Stationery- Magazines and CD ROM’s."
+        android:textAlignment="gravity"
+        android:textColor="@android:color/holo_blue_dark"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="16dp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif"
+         />
+
+    </ScrollView>
+
+</RelativeLayout>
